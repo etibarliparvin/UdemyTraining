@@ -1,9 +1,10 @@
 package Ders10;
 
+import java.util.Scanner;
+
 public class Arrays6 {
     public static void main(String[] args) {
-        boolean bb = ters.tersi("nan");
-        System.out.println(bb);
+        gonder.goster();
     }
 }
 class ters{
@@ -20,5 +21,13 @@ class ters{
         }
         System.out.println("Finished.");
         return true;
+    }
+}
+class gonder{
+    public static void goster(){
+        Scanner input = new Scanner(System.in);
+        String s = input.nextLine();
+        boolean bb = ters.tersi(s);
+        System.out.println(bb);
     }
 }
