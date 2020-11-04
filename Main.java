@@ -1,11 +1,24 @@
-package Lesson3;
-import java.util.Scanner;
+package ClassAndObjects;
+
 public class Main {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int x = input.nextInt();
-        String msj = ((x & 1) == 1) ? "The number is odd" : "The number is even"; // Ternary operation
-        System.out.println(msj);
+        Parvin.Narmin();
+	    User.umumi = "Salam";
+	    User.foo();
+        System.out.println(User.umumi);
+        User.age = 18;
+        System.out.println(User.age);
+        User u = new User();
+        User u2 = new User();
+        u.foo2();
+        u.name = "Parvin";
+        System.out.println(u.name);
+        u2.name = "Nermin";
+        System.out.println(u2.name);
+        u2.foo2();
+        Test.change();
+        Parvin.Narmin();
+        System.out.println(User.umumi);
     }
 }
