@@ -6,7 +6,7 @@ public class Main {
         int alma = 0;
         System.out.println(alma);
         topla(alma);
-        System.out.println(alma);
+        System.out.println(topla(alma));
 
     }
 
@@ -15,7 +15,7 @@ public class Main {
     }
 
     public static int topla(int a){
-        a = 5;
+        a += 5;
         return a;
     }
 }
