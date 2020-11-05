@@ -1,22 +1,21 @@
-package CalssesAndObjects;
-
-import java.util.Scanner;
+package Main;
 
 public class Main {
+
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int aa = input.nextInt();
-        Show kk = new Show();
-        kk.sh(aa);
+        int alma = 0;
+        System.out.println(alma);
+        topla(alma);
+        System.out.println(alma);
+
     }
-}
-class Enter{
-    public static int integ(int n){
-        return n;
+
+    public void foo(){
+
     }
-}
-class Show{
-    public void sh(int n){
-        System.out.println(Enter.integ(n));
+
+    public static int topla(int a){
+        a = 5;
+        return a;
     }
 }
