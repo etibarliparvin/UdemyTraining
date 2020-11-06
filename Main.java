@@ -1,31 +1,18 @@
-package ClassAndObjects;
-
-import java.util.Scanner;
+package Main;
 
 public class Main {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        String nn = input.nextLine();
-        User u = new User();
-        u.a(nn);
-        System.out.println(u.b());
+        User armud = new User();
+        System.out.println(armud.name);
+        change(armud);
     }
-}
-class User{
-    private String name;
-    public String surname;
-    public  int age;
-    public static String companyName;
-
-    public void a(String name){
-        this.name = name;
+    public static void change(User alma){
+        alma.name = "Noruwka";
+        Main m = new Main();
+        m.foo(alma.name);
     }
-
-    public String b(){
-        if(name.isEmpty()){
-            System.out.println("duz teyin edin!");
-        }
-        return this.name;
+    public void foo(String a){
+        System.out.println(a);
     }
 }
