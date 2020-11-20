@@ -1,18 +1,15 @@
 package Main;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        User armud = new User();
-        System.out.println(armud.name);
-        change(armud);
-    }
-    public static void change(User alma){
-        alma.name = "Noruwka";
-        Main m = new Main();
-        m.foo(alma.name);
-    }
-    public void foo(String a){
-        System.out.println(a);
-    }
+		Scanner in = new Scanner(System.in);
+		double d = in.nextDouble();
+		String s = String.format("%.2f", d);
+		System.out.println(s);
+		d = Double.parseDouble(s);
+		System.out.println(d);
+	}
 }
